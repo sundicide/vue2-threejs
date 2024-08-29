@@ -9,7 +9,11 @@ module.exports = {
     resolve: {
       symlinks: false,
       alias: {
-        '@': path.join(__dirname, 'src/')
+        '@': path.join(__dirname, 'src/'),
+        'three/addons': path.join(
+          __dirname,
+          'node_modules/three/examples/jsm/'
+        ),
       },
     },
     entry: ["@babel/polyfill", "./src/main.js"],

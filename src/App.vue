@@ -22,12 +22,14 @@
 <script>
 import Home from './components/Home'
 import DrawCurve from './components/DrawCurve'
+import Geometry from './example/Geometry'
 
 export default {
   name: 'App',
   components: {
-    DrawCurve,
     Home,
+    DrawCurve,
+    Geometry,
   },
   data() {
     return {
@@ -36,6 +38,7 @@ export default {
       menus: [
         { key: 'home', title: 'Home', component: Home },
         { key: 'draw-curve', title: 'DrawCurve', component: DrawCurve },
+        { key: 'geometry', title: 'Geometry', component: Geometry },
       ],
     }
   },
